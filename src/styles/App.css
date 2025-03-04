@@ -1,0 +1,28 @@
+/* src/styles/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .home-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700; /* Make it bold */
+}
+
+  

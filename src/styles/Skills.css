@@ -1,0 +1,63 @@
+/* Skills.css */
+.skills-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+   h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 5rem;
+    margin-bottom: 90px;
+  }
+  
+  .skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 70px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .java { color: #f8981d; }
+  .spring { color: #6db33f; }
+  .hibernate { color: #59666c; }
+  .react { color: #61dafb; }
+  .angular { color: #dd1b16; }
+  .html { color: #e34f26; }
+  .css { color: #1572b6; }
+  .js { color: #f7df1e; }
+  .node { color: #68a063; }
+  .express { color: #000000; }
+  .mysql { color: #00758f; }
+  .mongodb { color: #47a248; }
+  .postgres { color: #336791; }
+  .aws { color: #ff9900; }
+  .git { color: #f1502f; }
+  .github { color: #181717; }
+  .springboot { color: #6db33f; }
+  .kafka { color: #231F20; }
+  .docker { color: #2496ED; }
+
+
+  
+  .skill p {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  

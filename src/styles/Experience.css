@@ -1,0 +1,135 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.experience-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.subheading {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-button span {
+  margin-left: 10px;
+}
+
+.tab-button.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-button:hover {
+  color: #007bff;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content.left {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-content.right {
+  left: 55%;
+  text-align: right;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background-color: #007bff;
+  z-index: -1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.company {
+  font-size: 1.125rem;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.duration {
+  color: #868e96;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.6;
+}
