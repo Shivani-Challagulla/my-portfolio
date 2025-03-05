@@ -1,14 +1,19 @@
 import React from 'react';
-import '../styles/About.css'; // Don't forget to import the CSS
+import '../styles/About.css'; // Ensure correct import
+import shivaniPic from '../assets/shivani-picture.jpg';
 
 const About = () => {
   return (
-    <section className="about">
-      <h2>About Me</h2>
-      <h3>
-        Hi, I'm Shivani, a passionate Full Stack Developer with over 3 years of experience building robust and scalable applications. I specialize in Java, Spring Boot, React, and modern web technologies, with a strong focus on creating seamless user experiences.
-      </h3>
-    </section>
+    <div className="about-container">
+      <h2>Shivani Challagulla</h2>
+      <img src={shivaniPic} alt="Shivani" className="profile-image" />
+      <p>
+        I am a Full Stack Software Developer specializing in Java, Spring Boot, and Microservices. 
+        I design and develop scalable backend architectures, API-driven applications, and cloud-based solutions 
+        using AWS, Kafka, Docker, and PostgreSQL. Passionate about problem-solving, distributed systems, 
+        and writing clean, efficient code.
+      </p>
+    </div>
   );
 };
 

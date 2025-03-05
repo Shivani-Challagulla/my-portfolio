@@ -1,38 +1,77 @@
-/* About Section Styles */
-.about {
-    /*background-color: #f0f4f8;*/
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-    text-align: center;
+/* Center the entire About section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  /* padding: 40px 20px;  */
+}
+
+/* "About Me" Title Styling */
+.about-container h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Circular Profile Image */
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 40px;
+}
+
+/* Subtle Image Animation */
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Name Styling */
+.about-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #555;
+  text-align: left; /* Aligning text to the left */
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Description Text (Justified Alignment) */
+.about-container p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 1.8;
+  color: #555;
+  margin-top: 10px;
+  padding: 0 20px;
+  text-align: justify; /* This makes text justified like in MS Word */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 150px;
+    height: 150px;
   }
-  
-  .about h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+
+  .about-container h1 {
+    font-size: 1.8rem;
+    text-align: center; /* Center the title for smaller screens */
   }
-  
-  .about h3 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+
+  .about-container p {
+    font-size: 1rem;
+    text-align: justify;
   }
-  
-  @media screen and (max-width: 768px) {
-    .about h2 {
-      font-size: 30px;
-    }
-  
-    .about h3 {
-      font-size: 18px;
-    }
-  }
-  
+}

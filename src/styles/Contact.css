@@ -12,9 +12,9 @@
 /* Styling for the heading */
 .contact-container h2 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 6rem; /* Adjust font size for the heading */
+    font-size: 4rem; /* Adjust font size for the heading */
     margin-bottom: 100px; /* Space between heading and icons */
-    color: #333; /* Color of the heading */
+    color: #444; /* Color of the heading */
     width: 100%; /* Ensure heading takes full width */
 }
 
@@ -22,12 +22,12 @@
 .icons-container {
     display: flex;
     justify-content: center; /* Center icons horizontally */
-    gap: 120px; /* Space between icons */
+    gap: 90px; /* Space between icons */
 }
 
 /* Base styling for icons */
 .contact-icon {
-    font-size: 100px; /* Icon size */
+    font-size: 80px; /* Icon size */
     transition: transform 0.3s ease; /* Add transition for hover effect */
 }
 

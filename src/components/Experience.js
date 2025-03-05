@@ -1,70 +1,66 @@
 import React, { useState } from "react";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
-import "../styles/Experience.css"; // Make sure to import the CSS
+import "../styles/Experience.css";
+import { FaBriefcase, FaGraduationCap, FaCalendarAlt } from "react-icons/fa";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("work");
 
   return (
-    <div className="experience-container">
-      <h2 className="heading">Experiences</h2>
-      <p className="subheading">My journey</p>
-      <div className="tabs">
-        <button
-          className={`tab-button ${activeTab === "work" ? "active" : ""}`}
+    <div>
+      {/* 🟠 Toggle Buttons */}
+      <div className="qualification__tabs">
+        <button 
+          className={`qualification__button ${activeTab === "work" ? "active" : ""}`}
           onClick={() => setActiveTab("work")}
         >
-          <FaBriefcase /> <span>Work</span>
+          <FaBriefcase className="qualification__icon" /> Experience
         </button>
-        <button
-          className={`tab-button ${activeTab === "education" ? "active" : ""}`}
+        <button 
+          className={`qualification__button ${activeTab === "education" ? "active" : ""}`}
           onClick={() => setActiveTab("education")}
         >
-          <FaGraduationCap /> <span>Education</span>
+          <FaGraduationCap className="qualification__icon" /> Education
         </button>
       </div>
 
-      {activeTab === "work" ? (
+      {/* 🟠 Experience Timeline */}
+      {activeTab === "work" && (
         <div className="timeline">
-          <div className="timeline-item">
-            <div className="timeline-content left">
-              <h3 className="title">Full Stack Developer</h3>
-              <p className="company">Walmart, USA</p>
-              <p className="duration">Aug 2023 - Present</p>
-              {/* <p className="description">Developing and managing key software projects.</p> */}
+          <div className="container left">
+            <div className="content">
+              <p><strong>Full Stack Developer</strong></p>
+              <p>Walmart, USA</p>
+              <p><FaCalendarAlt className="qualification__icon" /> Aug 2023 - Present</p>
             </div>
-            <div className="timeline-line"></div>
           </div>
-          <div className="timeline-item">
-            <div className="timeline-content right">
-              <h3 className="title">Full Stack Developer</h3>
-              <p className="company">Magna Infotech, India</p>
-              <p className="duration">May 2020 - July 2022</p>
-              {/* <p className="description">Building responsive and dynamic web applications.</p> */}
+
+          <div className="container right">
+            <div className="content">
+              <p><strong>Full Stack Developer</strong></p>
+              <p>Magna Infotech, India</p>
+              <p><FaCalendarAlt className="qualification__icon" /> May 2020 - July 2022</p>
             </div>
-            <div className="timeline-line"></div>
           </div>
-          
         </div>
-      ) : (
+      )}
+
+      {/* 🟠 Education Timeline */}
+      {activeTab === "education" && (
         <div className="timeline">
-          <div className="timeline-item">
-            <div className="timeline-content left">
-              <h3 className="title">Master of Science in Computer Science</h3>
-              <p className="company">University of Houston, USA</p>
-              <p className="duration">Aug 2022 - May 2024</p>
-              {/* <p className="description">Focus on software engineering and computer applications.</p> */}
+          <div className="container left">
+            <div className="content">
+              <p><strong>Master of Science in Computer Science</strong></p>
+              <p>University of Houston, USA</p>
+              <p><FaCalendarAlt className="qualification__icon" /> Aug 2022 - May 2024</p>
             </div>
-            <div className="timeline-line"></div>
           </div>
-          <div className="timeline-item">
-            <div className="timeline-content right">
-              <h3 className="title">Bachelor of Technology in Information Technology</h3>
-              <p className="company">Prasad V. Potluri Siddhartha Institute of Technology, India</p>
-              <p className="duration">July 2018 - June 2022</p>
-              {/* <p className="description">Focus on software engineering and computer applications.</p> */}
+
+          <div className="container right">
+            <div className="content">
+              <p><strong>Bachelor of Technology in Information Technology</strong></p>
+              <p>PVP Siddhartha Institute of Technology, India</p>
+              <p><FaCalendarAlt className="qualification__icon" /> July 2018 - May 2022</p>
             </div>
-            <div className="timeline-line"></div>
           </div>
         </div>
       )}
